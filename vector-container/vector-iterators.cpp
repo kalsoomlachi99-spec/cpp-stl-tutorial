@@ -42,7 +42,7 @@ int main() {
 
     cout << "Reverse Iterator Loop:- " << endl;
  
-    // vector <int> :: reverse_iterator == auto
+    // vector <int> :: reverse_iterator == auto == vector <int> :: iterator 
     for (vector <int> :: reverse_iterator rit = vec.rbegin(); rit != vec.rend(); rit++){ // reverse iterator loop
         cout << *(rit) << " ";
     }
