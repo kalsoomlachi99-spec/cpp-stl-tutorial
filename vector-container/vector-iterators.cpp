@@ -10,6 +10,7 @@ void line(){
 int main() {
 
     /* C++ STL: vector iterators */
+    // vector is implemented as dynamic array
 
     vector <int> vec = {7, 13, 18, 30, 62, 67};
 
