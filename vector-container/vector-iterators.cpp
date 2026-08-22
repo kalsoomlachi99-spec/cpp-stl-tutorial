@@ -11,7 +11,7 @@ int main() {
 
     /* C++ STL: vector iterators */
 
-    vector <int> vec = {62, 67, 07, 13, 18, 30};
+    vector <int> vec = {7, 13, 18, 30, 62, 67};
 
     cout << "===== Vecotor Iterators ===== " << endl;
 
@@ -25,6 +25,28 @@ int main() {
     
     cout << "Vector.End: " << *(vec.end()) << endl; // pointing to position just after the last element.
     cout << "Vector.End - 1: " << *(vec.end() - 1) << endl; // pointing last element
+
+    line();
+
+    // Vector Iterator Loop  
+
+    cout << "Forword Iterator Loop:- " << endl;
+
+    vector <int> :: iterator it;
+    for (it = vec.begin(); it != vec.end(); it++){ // forword iterator loop
+        cout << *(it) << " ";
+    }
+    cout << endl;
+
+    line();
+
+    cout << "Reverse Iterator Loop:- " << endl;
+ 
+    // vector <int> :: reverse_iterator == auto
+    for (vector <int> :: reverse_iterator rit = vec.rbegin(); rit != vec.rend(); rit++){ // reverse iterator loop
+        cout << *(rit) << " ";
+    }
+    cout << endl;
 
     line();
 
