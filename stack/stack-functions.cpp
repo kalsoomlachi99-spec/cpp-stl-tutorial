@@ -6,7 +6,7 @@ void line() {
     cout << "----------------" << endl;
 }
 int main() {
-    /*Non-Sequential Container | Stack*/
+    /*Non-Sequential Container | Stack - LIFO | Late In First Out*/
     
     stack <int> s1;
     stack <int> s2;
