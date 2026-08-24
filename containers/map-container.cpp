@@ -2,6 +2,10 @@
 #include <map>
 using namespace std;
 
+void line(){
+    cout << "------------------" << endl;
+}
+
 int main() {
     
     /*C++ STL | Map*/
@@ -9,7 +13,9 @@ int main() {
     /*two main properties of map:
        1. unique key
        2. sort keys in acending orger*/
-    
+
+    cout << "Map Container:- " << endl;
+
     map <string, int> m;
 
     m["tv"] = 100;
@@ -31,6 +37,30 @@ int main() {
     } else {
         cout << "Not found\n";
     }
+    line();
+
+    cout << "Multi Map Container:- " << endl;
+
+    multimap <string, int> mM;
+
+    mM.emplace("Fridge", 33);
+    mM.emplace("Fridge", 33);
+    mM.emplace("Fridge", 33);
+    mM.emplace("Fridge", 33);
+
+    mM.erase(mM.find("Fridge")); // remove one key
+
+    for (auto p : mM) {
+        cout << p.first << " " << p.second << endl;
+    }
+
+    line();
+
+    mM.erase("Fridge"); // remove all keys
+    for (auto p : mM) {
+        cout << p.first << " " << p.second << endl;
+    }
+    line();
 
     return 0;
 }
