@@ -1,5 +1,6 @@
 #include <iostream>
 #include <map>
+#include <unordered_map>
 using namespace std;
 
 void line(){
@@ -37,7 +38,11 @@ int main() {
     } else {
         cout << "Not found\n";
     }
+
     line();
+
+    /*Multi map container*/
+    /*Property:  It may contain comman keys*/
 
     cout << "Multi Map Container:- " << endl;
 
@@ -60,6 +65,32 @@ int main() {
     for (auto p : mM) {
         cout << p.first << " " << p.second << endl;
     }
+
+    line();
+
+    /*Unordered map*/
+    /*two main properties of unordered map:
+       1. unique key
+       2. arrange keys in random order*/
+
+    cout << "Unordered_Map Container:- " << endl;
+
+    unordered_map <string, int> Um;
+    
+    Um["tv"] = 100;
+    Um["laptop"] = 50;
+    Um["tablet"] = 120;
+    Um["watch"] = 50;
+
+    Um.insert({"camera" , 150});
+    Um.emplace("headphones" , 98);
+
+    Um.erase("tv");
+
+    for (auto p : Um) {
+        cout << p.first << " " << p.second << endl;
+    }
+
     line();
 
     return 0;
