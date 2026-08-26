@@ -33,5 +33,27 @@ int main() {
     cout << "Lower bound = " << *(s.lower_bound(3)) << endl; // should not be less than the key
     cout << "Upper bound = " << *(s.upper_bound(3)) << endl; // should be greater than the key
 
+    cout << "Unordered Set Container:- " << endl;
+
+     /*Properties:
+       1. store unique values
+       2. unsorted , random order*/
+       
+    unordered_set <int> uS;
+
+    uS.insert(7);
+    uS.insert(8);
+    uS.insert(9);
+    uS.insert(10);
+    uS.insert(11);
+
+    uS.insert(8);
+    uS.insert(9);
+
+    for (auto val : uS){
+        cout << val << " " ;
+    }
+    cout << endl;
+
     return 0;
 }
