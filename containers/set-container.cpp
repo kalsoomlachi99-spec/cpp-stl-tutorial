@@ -15,7 +15,6 @@ int main() {
     
     set <int> s;
 
-    s.insert(6);
     s.insert(2);
     s.insert(3);
     s.insert(4);
@@ -38,20 +37,39 @@ int main() {
      /*Properties:
        1. store unique values
        2. unsorted , random order*/
-       
-    unordered_set <int> uS;
 
-    uS.insert(7);
-    uS.insert(8);
-    uS.insert(9);
-    uS.insert(10);
-    uS.insert(11);
+    unordered_set <int> uS; //TC: O(1)
 
-    uS.insert(8);
-    uS.insert(9);
+    uS.insert(1);
+    uS.insert(2);
+    uS.insert(3);
+    uS.insert(4);
+    uS.insert(5);
+
+    uS.insert(4);
+    uS.insert(3);
 
     for (auto val : uS){
         cout << val << " " ;
+    }
+    cout << endl;
+
+    cout << "Multi Set Container:- " << endl;
+
+    multiset <int> mS; // store common values
+
+    mS.insert(1);
+    mS.insert(2);
+    mS.insert(3);
+    mS.insert(4);
+    mS.insert(5);
+
+    mS.insert(1);
+    mS.insert(2);
+    mS.insert(3);
+
+    for (auto val : mS){
+        cout << val << " ";
     }
     cout << endl;
 
