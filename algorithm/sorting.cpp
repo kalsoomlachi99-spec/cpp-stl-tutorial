@@ -23,13 +23,23 @@ int main() {
 
     vector <int> vec = {3, 0, 8, 2, 1, 5, 3};
 
-    sort (vec.begin(), vec.end());
+    sort (vec.begin(), vec.end(), greater<int>()); // greater functor or camparator used to sort data in decending order
 
     for (int val : vec){
         cout << val << " ";
     }
     cout << endl;
 
+    cout << "Sorting in vector of pair:- " << endl;
+
+    vector <pair <int, int>> vecOfPair = {{1,2}, {2,3}, {3,1}, {7,1}};
+
+    sort (vec.begin(), vec.end()); 
+
+    for (auto p : vecOfPair){
+        cout << p.first << " " << p.second << endl; //sort according to the first value of pair
+    }
+  
     return 0;
 }
  
