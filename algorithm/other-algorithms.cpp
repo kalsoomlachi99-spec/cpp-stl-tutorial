@@ -44,5 +44,17 @@ int main() {
     cout << s << endl;
     line();
 
+    cout << "Max, Min, & Swap:- " << endl;
+
+    int a=3, b=5;
+    cout << "a = " << a << ", b = " << b << endl;
+
+    cout << "Max of a & b: " << max(a, b) << endl;
+
+    cout << "Min of a & b: " << min(a, b) << endl;
+
+    swap(a, b);
+    cout << "Swap a & b: a = " << a << " b = " << b << endl;
+    
     return 0;
 }
