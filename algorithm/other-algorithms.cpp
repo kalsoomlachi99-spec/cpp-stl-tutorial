@@ -35,5 +35,14 @@ int main() {
     cout << endl;
     line();
 
+    cout << "Next Permutation:- " << endl;
+
+    string s = "abc";
+
+    next_permutation(s.begin(), s.end());
+
+    cout << s << endl;
+    line();
+
     return 0;
 }
