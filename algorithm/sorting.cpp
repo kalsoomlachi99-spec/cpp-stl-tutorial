@@ -66,8 +66,7 @@ int main() {
         cout << p.first << " " << p.second << endl; //sort according to the first value of pair
     }
     line();
-
-  
+    
     return 0;
 }
  
